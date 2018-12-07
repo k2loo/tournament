@@ -1,0 +1,9 @@
+.hidespoiler{
+	color:grey;
+	background-color: grey;
+}
+.showspoiler{
+	color:white;
+	background-color: darkred;
+
+}
