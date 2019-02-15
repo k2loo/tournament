@@ -4,14 +4,16 @@
 	--secondaryColor: rgba(228, 0, 43, 1);
   --light: rgba(248, 248, 248,1);
   --dark: rgba(80, 80, 80,1);
+	--owlGrey: #212226;
+	--owlOrange: #ef9f3c;
 }
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   src: local('Work Sans'), local('WorkSans-Regular'),
-       url('../fonts/work-sans-v3-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/work-sans-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../fonts/work-sans-v3-latin-regular.woff2') format('woff2'),
+       url('../fonts/work-sans-v3-latin-regular.woff') format('woff');
 }
 
 body,html{
@@ -77,20 +79,10 @@ h3{
 	grid-template-columns: 50vw 50vw;
 	grid-template-areas: 'typography colors';
 }
-#typography{
-	/* grid-area: typography; */
-	grid-column: span 1;
-}
-#colors{
-	/* grid-area: colors; */
-	grid-column: span 1;
-}
-#colors>div{
-	height:20%;
-	padding:2rem;
-}
-#footer{
-	width: 100%;
+
+.badge{
+	height:250px;
+	width: auto;
 }
 
 .feathericon {
