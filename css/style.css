@@ -1,9 +1,105 @@
-.hidespoiler{
-	color:grey;
-	background-color: grey;
+:root{
+  font-size: 10px;
+  --primaryColor: rgba(63, 21, 79, 1);
+	--secondaryColor: rgba(228, 0, 43, 1);
+  --light: rgba(248, 248, 248,1);
+  --dark: rgba(80, 80, 80,1);
 }
-.showspoiler{
-	color:white;
-	background-color: darkred;
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans-Regular'),
+       url('../fonts/work-sans-v3-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/work-sans-v3-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
+body,html{
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  color: var(--dark);
+  background-color: var(--light);
+}
+h1{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 800;
+  font-size: 8rem;
+}
+h2{
+  font-family: 'Roboto Slab', serif;;
+  font-weight: 400;
+  font-size: 4rem;
+}
+h3{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.textprimary{
+  color:var(--primaryColor);
+}
+.textsecondary{
+  color:var(--secondaryColor);
+}
+.textlight{
+  color:var(--light);
+}
+.textdark{
+	color:var(--dark);
+}
+.smallcaps{
+  font-variant: small-caps;
+}
+.textcenter{
+  text-align: center;
+}
+.bglight{
+  background-color: var(--light);
+}
+.bgdark{
+	background-color: var(--dark);
+}
+.bgprimary{
+	background-color: var(--primaryColor);
+}
+.bgsecondary{
+	background-color: var(--secondaryColor);
+}
+.fullwidth{
+  width: 100vw;
+}
+.grid{
+	display:grid;
+	grid-gap: 2rem;
+	grid-template-columns: 50vw 50vw;
+	grid-template-areas: 'typography colors';
+}
+#typography{
+	/* grid-area: typography; */
+	grid-column: span 1;
+}
+#colors{
+	/* grid-area: colors; */
+	grid-column: span 1;
+}
+#colors>div{
+	height:20%;
+	padding:2rem;
+}
+#footer{
+	width: 100%;
+}
+
+.feathericon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+	margin-left: 2rem;
 }

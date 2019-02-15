@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- CHANGE FAVICONS -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
@@ -13,26 +14,72 @@
 	<meta name="msapplication-TileColor" content="#ed312f">
 	<meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ed312f">
-	<title>Overwatch Tournament Tracker</title>
+	<!-- CHANGE SITE TITLE -->
+	<title>Site title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Watch tournament vods and see standings WITHOUT SPOILERS">
+	<meta name="description" content="Search result text | change this">
+	<!-- CHANGE/REMOVE GOOGLE FONTS EXTERNAL LINK -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<!-- CHANGE/REMOVE MILTIPLE GOOGLE FONTS EXTERNAL LINK -->
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:800|Vollkorn|Work Sans" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.min.css">
-	<link rel="stylesheet" href="css/style.css">
-
+	<!-- CHANGE/REMOVE SELF-HOSTED FONTS PRELOAD LINK -->
+	<link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff" crossorigin>
+	<link rel="preload" as="font" type="font/woff2" href="./fonts/work-sans-v3-latin-regular.woff2" crossorigin>
+	<!-- KEEP CSS RESET -->
+	<link rel="stylesheet" href="/css/normalize.min.css">
+	<!-- MINIFY CSS AND CHANGE LINK -->
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- MINIFY JS AND CHANGE LINK -->
+	<script src="/js/scripts.js"></script>
+	<!-- FEATHER ICONS MIN.JS LINK -->
+	<script src="/js/feather.min.js"></script>
 </head>
 
 <body>
-	<button onclick="toggleSpoiler()">
-		<p>Show Spoiler</p>
-	</button>
-	<div id="match1" class="hidespoiler">
-		<p>omg this is the spoiler</p>
+	<div class="grid">
+		<div id="typography" class="typography">
+			<p class="textcenter">Typography</p>
+			<h1>h1 h1 h1</h1>
+			<h2>h2 h2 h2</h2>
+			<h3>h3 h3 h3</h3>
+			<p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa, molestiae molestias assumenda porro consequuntur provident nobis asperiores facilis. Sit molestiae ducimus reiciendis asperiores! Ducimus maiores vero molestiae totam ea culpa impedit accusantium molestias magni, vitae dolor! </p>
+			<p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsa, molestiae molestias assumenda porro consequuntur provident nobis asperiores facilis. Sit molestiae ducimus reiciendis asperiores! Ducimus maiores vero molestiae totam ea culpa impedit accusantium molestias magni, vitae dolor! </p>
+
+			<div>
+				<span class="feathericon">
+					<i data-feather="feather"></i>
+					<span>feather icons</span>
+				</span>
+			</div>
+			<div id="footer" class="textcenter smallcaps">
+				<p>footer content in small caps</p>
+			</div>
+		</div>
+		<div id="colors" class="colors textcenter">
+			<p class="textcenter">Colors</p>
+			<div class="bgprimary textsecondary">
+				.bgprimary .textsecondary
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quisquam.</p>
+			</div>
+			<div class="bgsecondary textprimary">
+				.bgsecondary .textprimary
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quisquam.</p>
+			</div>
+			<div class="bgdark textlight">.bgdark .textlight
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quisquam.</p>
+			</div>
+			<div class="bglight textdark">.bglight .textdark
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quisquam.</p>
+			</div>
+		</div>
 	</div>
+
 </body>
 
 <footer>
-	<script src="js/scripts.js" type="text/javascript">
-		// toggleSpoiler();
+	<!-- FEATHER ICONS SCRIPT -->
+	<script>
+		feather.replace()
 	</script>
+
 </footer>
