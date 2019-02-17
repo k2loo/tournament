@@ -80,11 +80,6 @@ h3{
 	grid-template-areas: 'typography colors';
 }
 
-.badge{
-	height:250px;
-	width: auto;
-}
-
 .feathericon {
   width: 24px;
   height: 24px;
@@ -94,4 +89,52 @@ h3{
   stroke-linejoin: round;
   fill: none;
 	margin-left: 2rem;
+}
+.spacer{
+	display: block;
+	position: absolute:
+}
+
+.badge{
+	display: inline-block;
+	height:15rem;
+	width: 20rem;
+}
+
+.badge img{
+	height:10rem;
+	/* width: auto; */
+}
+
+.shd{
+	background-color: #d22630;
+	/* width:20rem; */
+	text-align: center;
+}
+
+.dal{
+	background-color: #0B233F;
+	/* width:15rem; */
+	text-align: center;
+}
+
+.vs{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: lightgrey;
+	width: 3rem;
+	height:3rem;
+	padding:1rem;
+	margin-left: -2.5rem;
+	margin-right: -2.5rem;
+	text-align: center;
+	z-index: 1;
+}
+.card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	padding: 1rem;
 }

@@ -1,6 +1,37 @@
+
 // let uri = './data.json';
 // let req = new Request(uri, {method: 'GET'});
 // document.addEventListener('DOMContentLoaded', init);
+
+Vue.component('shd', {
+	data: function () {
+		return {
+			abbr: 'SHD',
+			city: 'Shanghai',
+			team: 'Dragons',
+			logo: 'dragons.svg',
+			bgcolor: '#d22630'
+		}
+	},
+	template: '<div id="shd" class="badge">{{ city }} {{team}}</br><img src="/img/team-logos/dragons.svg" alt=""></div>'
+})
+
+new Vue({ el: '.shd' })
+
+Vue.component('dal', {
+	data: function () {
+		return {
+			abbr: 'DAL',
+			city: 'Dallas',
+			team: 'Fuel',
+			logo: 'fuel.svg',
+			bgcolor: '#0B233F'
+		}
+	},
+	template: '<div id="dal" class="badge">{{ city }} {{team}}</br><img src="/img/team-logos/fuel.svg" alt=""></div>'
+})
+
+new Vue({ el: '.dal' })
 
 new Vue(
 	{
@@ -149,6 +180,7 @@ new Vue(
 		}
 	}
 ),
+
 	new Vue(
 		{
 			el: '#VAL',
