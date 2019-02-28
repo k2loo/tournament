@@ -92,7 +92,7 @@ h3{
 }
 .spacer{
 	display: block;
-	position: absolute:
+	/* position: absolute; */
 }
 
 .badge{
@@ -125,16 +125,35 @@ h3{
 	background-color: lightgrey;
 	width: 3rem;
 	height:3rem;
-	padding:1rem;
+	padding: 1rem;
 	margin-left: -2.5rem;
 	margin-right: -2.5rem;
 	text-align: center;
 	z-index: 1;
+	transform: rotate(45deg);
+	border-radius: 1rem
+}
+.vstext{
+	transform: rotate(-45deg);
 }
 .card{
 	display: flex;
+	position: absolute;
 	justify-content: center;
 	align-items: center;
 	margin: 1rem;
-	padding: 1rem;
+	/* padding: 1rem; */
+	border-radius: 1rem;
+}
+/* .card:first-child{
+	border-radius: 1rem 1rem 1rem 1rem;
+}
+.card:nth-last-child(2){
+	border-radius: 0 1rem 1rem 0;
+} */
+.badge:first-of-type{
+	border-radius: 1rem 0 0 1rem;
+}
+.badge:last-of-type{
+	border-radius: 0 1rem 1rem 0;
 }

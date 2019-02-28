@@ -13,10 +13,10 @@ Vue.component('shd', {
 			bgcolor: '#d22630'
 		}
 	},
-	template: '<div id="shd" class="badge">{{ city }} {{team}}</br><img src="/img/team-logos/dragons.svg" alt=""></div>'
+	template: '<div class="shd badge">{{ city }} {{team}}</br><img src="/img/team-logos/dragons.svg" alt=""></div>'
 })
 
-new Vue({ el: '.shd' })
+new Vue({ el: '.card' })
 
 Vue.component('dal', {
 	data: function () {
